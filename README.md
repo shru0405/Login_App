@@ -1,12 +1,8 @@
 # Login_App 
 A user registration system with Python(Flask), MySql and React. Users can register and login and view dashboards.
 
-REQUIREMENTS:
-Python, make sure to check the box Add Python to PATH on the installation setup screen.
-Download and install MySQL Community Server and MySQL Workbench.
-
-
 SETUP and STEPS:
+
 1). Form Design — Design a login and registration form with React.
 
 2). Templates — Create Flask templates with HTML and Python.
