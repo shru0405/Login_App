@@ -68,6 +68,7 @@ const PasswordResetPage = ({ match }) => {
   };
 
   return (
+  ```html
     <div>
       <h2>Password Reset</h2>
       <label>New Password:</label>
@@ -78,7 +79,9 @@ const PasswordResetPage = ({ match }) => {
       />
       <button onClick={handlePasswordReset}>Reset Password</button>
     </div>
+```
   );
+
 };
 
 export default PasswordResetPage;
