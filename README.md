@@ -17,7 +17,7 @@ SETUP and STEPS:
 
 RUNNING THE APP LOCALLY:
 
-1.Set up your development environment:
+1.Set up  development environment:
 
     Install Node.js
     Install npm (Node Package Manager): npm is included with Node.js, so once you install Node.js, npm will be available.
