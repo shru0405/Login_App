@@ -108,9 +108,6 @@ When the user clicks on the link, extract the token from the URL and send it to 
 
 This can be accomplished using Axios to make the API call. The axios.post method is used to send a POST request to the server with the new password. The server end must be able to handle the request and update the database.
 
-
-Password reset.jsx
-
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -124,11 +121,17 @@ const PasswordResetPage = ({ match }) => {
       const response = await axios.post(`/api/reset-password/${match.params.token}`, {
         password: password,
       });
+
+      // Handle the response as needed
+      console.log('Password reset successful:', response.data);
+    } catch (error) {
+      console.error('Password reset failed:', error.response.data);
+      // Handle errors, e.g., show an error message to the user
+    }
   };
 
   return (
-  ```html
-      <div>
+    <div>
       <h2>Password Reset</h2>
       <label>New Password:</label>
       <input
@@ -138,9 +141,8 @@ const PasswordResetPage = ({ match }) => {
       />
       <button onClick={handlePasswordReset}>Reset Password</button>
     </div>
-```
   );
-
 };
 
 export default PasswordResetPage;
+
