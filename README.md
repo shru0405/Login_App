@@ -39,7 +39,7 @@ RUNNING THE APP LOCALLY:
 
     Replace the content of src/App.js with your login page component code. Create separate components for login and other related functionalities.
 
-5.Set up your Python backend:
+5.Set up a Python backend:
 
     Create a Python virtual environment:
 
@@ -54,7 +54,7 @@ RUNNING THE APP LOCALLY:
 
     pip install Flask Flask-CORS
 
-8.Create your Python backend:
+8.Create the Python backend:
 
     Create a new file, e.g, app.py, and set up a basic Flask app with endpoints for handling user authentication.
 
@@ -69,16 +69,16 @@ RUNNING THE APP LOCALLY:
 
     Update your React.js code to make API requests to your Python backend.
 
-11.Run your applications:
+11.Run the applications:
 
     Start your Flask backend by running:
     python app.py
 
-12.Start your React.js app by running:
+12.Start React.js app by running:
 
     npm start
 
-13.Access your app:
+13.Access the app:
 
     Open your web browser and navigate to http://localhost:3000 to see your React.js app in action.
 
