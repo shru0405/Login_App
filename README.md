@@ -15,6 +15,73 @@ SETUP and STEPS:
 
 6). Routes — Routing will allow us to point our URL's to our functions.
 
+RUNNING THE APP LOCALLY:
+
+1.Set up your development environment:
+
+    Install Node.js
+    Install npm (Node Package Manager): npm is included with Node.js, so once you install Node.js, npm will be available.
+
+2.Create a React.js app:
+
+    Open a terminal and run the following commands:
+
+    npx create-react-app my-login-app
+    cd my-login-app
+
+3.Install required dependencies:
+
+    Install additional dependencies needed for the login functionality:
+
+    npm install axios react-router-dom
+
+4.Create the login page:
+
+    Replace the content of src/App.js with your login page component code. Create separate components for login and other related functionalities.
+
+5.Set up your Python backend:
+
+    Create a Python virtual environment:
+
+    python -m venv venv
+
+6.Activate the virtual environment:
+
+    On Windows: venv\Scripts\activate
+    On macOS/Linux: source venv/bin/activate
+
+7.Install Flask and Flask-CORS:
+
+    pip install Flask Flask-CORS
+
+8.Create your Python backend:
+
+    Create a new file, e.g, app.py, and set up a basic Flask app with endpoints for handling user authentication.
+
+9.Set up MySQL database:
+
+    Install MySQL and create a database for your application.
+    Install the MySQL Python connector:
+
+    pip install mysql-connector-python
+
+10.Connect React.js to Python backend:
+
+    Update your React.js code to make API requests to your Python backend.
+
+11.Run your applications:
+
+    Start your Flask backend by running:
+    python app.py
+
+12.Start your React.js app by running:
+
+    npm start
+
+13.Access your app:
+
+    Open your web browser and navigate to http://localhost:3000 to see your React.js app in action.
+
 CREATING A PROFILE PAGE:
 The profile page is where the user can go to view their username, password, and email.
 
