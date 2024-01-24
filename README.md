@@ -8,10 +8,15 @@ Download and install MySQL Community Server and MySQL Workbench.
 
 SETUP and STEPS:
 1). Form Design — Design a login and registration form with React.
+
 2). Templates — Create Flask templates with HTML and Python.
+
 3). Basic Validation — Validating form data that is sent to the server (username, password, and email).
+
 4). Session Management — Initialize sessions and store retrieved database results.
+
 5). MySQL Queries — Select and insert records from/in our database table.
+
 6). Routes — Routing will allow us to point our URL's to our functions.
 
 CREATING A PROFILE PAGE:
@@ -38,7 +43,7 @@ When the user clicks on the link, extract the token from the URL and send it to 
 6. Update Password:
  If the token is valid, allow the user to update their password on the password reset page.
 
-This can be accomplished using Axios to make the API call:The axios.post method is used to send a POST request to the server with the new password. The server end must be able to handle the request and update the database.
+This can be accomplished using Axios to make the API call. The axios.post method is used to send a POST request to the server with the new password. The server end must be able to handle the request and update the database.
 
 ***import React, { useState } from 'react';
 import axios from 'axios';
