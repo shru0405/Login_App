@@ -90,12 +90,18 @@ def home():
     # User is not logged in redirect to login page
     return redirect(url_for('login'))
 
-@app.route('/profile')
+# http://localhost:5000/pythinlogin/profile
+# This will be the profile page, only accessible for logged-in users
+@app.route('/pythonlogin/profile')
 def profile():
     # Check if user is logged in
     if 'loggedin' in session:
-        # User is logged in show them the home page
-        return render_template('auth/profile.html', username=session['username'], title="Profile")
+        # We need all the account info for the user so we can display it on the profile page
+        cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+        cursor.execute('SELECT * FROM accounts WHERE id = %s', [session['id']])
+        account = cursor.fetchone()
+        # Show the profile page with account info
+        return render_template('auth/profile.html', account=account, username=session['username'], title="Profile")
     # User is not logged in redirect to login page
     return redirect(url_for('login'))
 
